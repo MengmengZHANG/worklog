@@ -1,7 +1,8 @@
+tornado
+tornado-utils
 py-bcrypt
 coverage
 mongokit
-pycurl
 simplejson
 xlwt
 lxml

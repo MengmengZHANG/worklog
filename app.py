@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-#
 
 # pre
 import site
@@ -27,14 +26,23 @@ from tornado_utils.routes import route
 from utils.git import get_git_revision
 
 ################################################################################
+# original
+# define("debug", default=False, help="run in debug mode", type=bool)
+# define("port", default=8080, help="run on the given port", type=int)
+# define("database_name", default=settings.DATABASE_NAME, help="mongodb database name")
+# define("prefork", default=False, help="pre-fork across all CPUs", type=bool)
+# define("showurls", default=False, help="Show all routed URLs", type=bool)
+# define("dont_combine", default=False, help="Don't combine static resources", type=bool)
+# define("dont_embed_static_url", default=False,
+#        help="Don't put embed the static URL in static_url()", type=bool)
 
-define("debug", default=False, help="run in debug mode", type=bool)
-define("port", default=8000, help="run on the given port", type=int)
+define("debug", default=True, help="run in debug mode", type=bool)
+define("port", default=8080, help="run on the given port", type=int)
 define("database_name", default=settings.DATABASE_NAME, help="mongodb database name")
 define("prefork", default=False, help="pre-fork across all CPUs", type=bool)
 define("showurls", default=False, help="Show all routed URLs", type=bool)
-define("dont_combine", default=False, help="Don't combine static resources", type=bool)
-define("dont_embed_static_url", default=False,
+define("dont_combine", default=True, help="Don't combine static resources", type=bool)
+define("dont_embed_static_url", default=True,
        help="Don't put embed the static URL in static_url()", type=bool)
 
 
